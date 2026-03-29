@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV WEB PAGE  </title>
+   
+    <style>
+        :root {
+            --primary: #6a5acd; 
+            --accent: #d81b60;  
+            --bg: #fdfdfd;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            max-width: 950px;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            gap: 50px;
+        }
+
+        
+        header {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid var(--text);
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+        }
+
+       
+
+        .header-info h1 {
+            font-size: 42px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-info p {
+            font-size: 18px;
+            color: var(--accent);
+            font-weight: bold;
+            
+        }
+
+        
+        .sidebar h2 {
+            font-size: 18px;
+            color: var(--primary);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-item, .skill-tag, .interest-tag {
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .skill-tag {
+            background: #f3f0ff;
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 3px;
+            font-weight: bold;
+        }
+
+       
+        .main-content h2 {
+            font-size: 22px;
+            border-bottom: 2px solid var(--text);
+            padding-bottom: 5px;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .entry { margin-bottom: 30px; }
+        .entry-title { font-size: 18px; font-weight: bold; margin: 0; }
+        .entry-subtitle { color: var(--primary); font-weight: 600; margin: 2px 0; }
+        .entry-meta { font-size: 13px; color: #777; margin-bottom: 8px; }
+        
+        .accent-bold { color: var(--accent); font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .cv-container { grid-template-columns: 1fr; padding: 20px; }
+            header { flex-direction: column; text-align: center; }
+            .profile-img { margin: 0 0 20px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <div class="profile-img">
+             
+        </div>
+        <div class="header-info">
+            <h1>Muhammad Abdullah</h1>
+            <p>Passionate a Cyber Security learner and solve real world problems</p>
+            <span style="font-size: 14px; color: #666;"> Julshan Iqbal Park, China Chowk</span>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <h2>Contact</h2>
+        <span class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:abdullahsheikh2254436@gmail.com" style="color:inherit; text-decoration:none;">abdullahsheikh2254436@gmail.com</a></span>
+        
+        <h2>Skills</h2>
+        <div class="skill-tag">Ms Word</div> <div class="skill-tag">Excel</div>
+        <div class="skill-tag">Power point</div> <div class="skill-tag">Dev C++</div>
+        <div class="skill-tag">Adobe photoshop</div> <div class="skill-tag">Ms Excess</div>
+
+        <h2>Languages</h2>
+        <p class="contact-item"><b>English/Urdu:</b> Professional</p>
+        <p class="contact-item"><b>Punjabi:</b> Working</p>
+        <p class="contact-item"><b>Arabic:</b> Proficiency</p>
+
+        <h2>Interests</h2>
+        <span class="interest-tag">• Cyber security</span>
+        <span class="interest-tag">• Cricket</span>
+        <span class="interest-tag">• Basketball</span>
+    </div>
+
+    <div class="main-content">
+        <h2>Work Experience</h2>
+        <div class="entry">
+            <p class="entry-title">Student of Information and Technology</p>
+            <p class="entry-subtitle">University of Management and Technology</p>
+            <p class="entry-meta">10/2024 | Sialkot, Pakistan</p>
+            <p>Developing logic for <span class="accent-bold">Traffic Signal Design</span> and programming in HTML, CSS, and Python.</p>
+        </div>
+
+        <h2>Education</h2>
+        <div class="entry">
+            <p class="entry-title">BS IT</p>
+            <p class="entry-subtitle">University of Management and Technology</p>
+            <p class="entry-meta">09/2024 - 09/2028 | Sialkot, Pakistan</p>
+        </div>
+
+        <div class="entry">
+            <p class="entry-title">Fsc Pre-Engineering</p>
+            <p class="entry-subtitle">Punjab Group of Colleges</p>
+            <p class="entry-meta">02/2023 - 03/2024 | Marks: <span class="accent-bold">905/1200</span></p>
+        </div>
+
+        <div class="entry">
+            <p class="entry-title">Biology (Matriculation)</p>
+            <p class="entry-subtitle">Loretto House School System</p>
+            <p class="entry-meta">02/2021 - 03/2023 | Marks: <span class="accent-bold">1098/1100</span></p>
+        </div>
+
+        <h2>Projects</h2>
+        <div class="entry">
+            <p class="entry-title">Ludo Game & Smart Cart Management</p>
+            <p class="entry-subtitle">C++ Developer</p>
+            <p>Implemented using <span class="accent-bold">Data Structures (DSA)</span>. Created a serious impact on logic building.</p>
+        </div>
+
+        <div class="entry">
+            <p class="entry-title">Math Quiz Game</p>
+            <p class="entry-subtitle">Assembly Language</p>
+            <p class="entry-meta">01/2026 - 02/2026</p>
+        </div>
+
+        <h2>Achievements</h2>
+        <p>• <b>Speech Winning Award:</b> Jammia Masjid Khalid Bin Waleed (01/2021)</p>
+    </div>
+</div>
+
+</body>
+</html>
